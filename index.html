@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/62645353a9.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Desafio 4</title>
 </head>
@@ -20,40 +20,68 @@
     </header>
 
     <!-- NAV -->
-    <nav class="nav">
-        <a href="index.html" class="nav__title">Gaming Store</a>
-        <ul class="nav__ul">
-            <li class="nav__li nav__li--active"><a href="index.html" class="nav__link">Inicio</a></li>
-            <li class="nav__li"><a href="pages/productos.html" class="nav__link">Productos</a></li>
-            <li class="nav__li"><a href="pages/contacto.html" class="nav__link">Contacto</a></li>
-        </ul>
-    </nav>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-2" href="index.html">Gaming Store</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item fs-5">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item fs-5">
+                <a class="nav-link" href="pages/productos.html">Productos</a>
+              </li>
+              <li class="nav-item fs-5">
+                <a class="nav-link" href="pages/servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item fs-5">
+                <a class="nav-link" href="pages/sponsor.html">Sponsors</a>
+              </li>
+              <li class="nav-item fs-5">
+                <a class="nav-link" href="pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
     <!-- MAIN -->
     <main class="main">
 
-        <!-- SECTION ITEMS -->
-        <section class="main__items">
-            <div class="sec__title" data-aos="fade-up">
-                <h2>Algunos Juegos</h2>
+        <!-- SECTION CAROUSEL -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
-            <div class="items__container" data-aos="zoom-in">
-                <img src="assets/img/games-image1.jpg" alt="God of War" class="items__img">
-                <h3 class="items__subtitle">God of War</h3>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/img/games-image1.jpg" class="d-block w-100" alt="God of War">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/games-image2.jpg" class="d-block w-100" alt="The last of us">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/games-image3.jpg" class="d-block w-100" alt="Assasins">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/games-image4.png" class="d-block w-100" alt="Fifa">
+              </div>
             </div>
-            <div class="items__container" data-aos="zoom-in">
-                <img src="assets/img/games-image2.jpg" alt="The Last of Us" class="items__img">
-                <h3 class="items__subtitle">The Last of Us</h3>
-            </div>
-            <div class="items__container" data-aos="zoom-in">
-                <img src="assets/img/games-image3.jpg" alt="Assasin's Creed" class="items__img">
-                <h3 class="items__subtitle">Assasin's Creed</h3>
-            </div>
-            <div class="items__container" data-aos="zoom-in">
-                <img src="assets/img/games-image4.png" alt="FIFA" class="items__img">
-                <h3 class="items__subtitle">Fifa</h3>
-            </div>
-        </section>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
 
         <!-- SECTION US -->
         <section class="main__us">
@@ -82,10 +110,15 @@
         </div>
     </footer>
 
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
     <!-- LIBRERIA DE ANIMACIONES -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+
+    <script src="https://kit.fontawesome.com/62645353a9.js" crossorigin="anonymous"></script>
 </body>
 </html>

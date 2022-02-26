@@ -32,13 +32,13 @@
                 <a class="nav-link" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item fs-5">
-                <a class="nav-link active" href="productos.html" aria-current="page">Productos</a>
+                <a class="nav-link" href="productos.html">Productos</a>
               </li>
               <li class="nav-item fs-5">
                 <a class="nav-link" href="servicios.html">Servicios</a>
               </li>
               <li class="nav-item fs-5">
-                <a class="nav-link" href="sponsor.html">Sponsors</a>
+                <a class="nav-link active" href="sponsor.html" aria-current="page">Sponsors</a>
               </li>
               <li class="nav-item fs-5">
                 <a class="nav-link" href="contacto.html">Contacto</a>
@@ -49,55 +49,37 @@
     </nav>
 
     <!-- MAIN -->
-    <main class="main">
-
-        <!-- SECTION PRODUCTOS -->
-        <section class="main__productos">
-            <div class="sec__title">
-                <h2>Productos</h2>
+    <main>
+        <div class="sponsor__title">
+            <h2 class="fs-2">Nuestros Sponsors</h2>
+        </div>
+        <div class="carousel__container">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="1000">
+                        <img src="../assets/img/imagen-marca1.jpg" class="d-block w-100" alt="nvidia">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1000">
+                        <img src="../assets/img/imagen-marca2.jpg" class="d-block w-100" alt="republic of gamers">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1000">
+                        <img src="../assets/img/imagen-marca3.jpg" class="d-block w-100" alt="amd">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1000">
+                        <img src="../assets/img/imagen-marca4.jpg" class="d-block w-100" alt="cooler master">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
             </div>
-
-            <div class="productos__item" data-aos="zoom-in">
-                <div class="productos__container">
-                    <img src="../assets/img/productos-image1.jpg" class="productos__img" alt="PC">
-                    <h3 class="productos__title">PC</h3>
-                </div>
-                <div class="productos__text">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis explicabo aut tenetur laboriosam.</p>
-                </div>
-            </div>
-
-            <div class="productos__item" data-aos="zoom-in">
-                <div class="productos__container">
-                    <img src="../assets/img/productos-image2.jpg" class="productos__img" alt="Consolas">
-                    <h3 class="productos__title">Consolas</h3>
-                </div>
-                <div class="productos__text">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis explicabo aut tenetur laboriosam.</p>
-                </div>
-            </div>
-
-            <div class="productos__item" data-aos="zoom-in">
-                <div class="productos__container">
-                    <img src="../assets/img/productos-image3.jpg" class="productos__img" alt="Perifericos">
-                    <h3 class="productos__title">Perifericos</h3>
-                </div>
-                <div class="productos__text">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis explicabo aut tenetur laboriosam.</p>
-                </div>
-            </div>
-
-            <div class="productos__item" data-aos="zoom-in">
-                <div class="productos__container">
-                    <img src="../assets/img/productos-image4.jpg" class="productos__img" alt="Juegos">
-                    <h3 class="productos__title">Juegos</h3>
-                </div>
-                <div class="productos__text">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis explicabo aut tenetur laboriosam.</p>
-                </div>
-            </div>
-            
-        </section>
+        </div>
+        
     </main>
 
     <!-- FOOTER -->
@@ -114,14 +96,8 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-    <!-- LIBRERIA DE ANIMACIONES -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
 
     <script src="https://kit.fontawesome.com/62645353a9.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

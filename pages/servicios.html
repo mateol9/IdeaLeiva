@@ -32,10 +32,10 @@
                 <a class="nav-link" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item fs-5">
-                <a class="nav-link active" href="productos.html" aria-current="page">Productos</a>
+                <a class="nav-link" href="productos.html">Productos</a>
               </li>
               <li class="nav-item fs-5">
-                <a class="nav-link" href="servicios.html">Servicios</a>
+                <a class="nav-link active" href="servicios.html" aria-current="page">Servicios</a>
               </li>
               <li class="nav-item fs-5">
                 <a class="nav-link" href="sponsor.html">Sponsors</a>
@@ -49,57 +49,53 @@
     </nav>
 
     <!-- MAIN -->
-    <main class="main">
-
-        <!-- SECTION PRODUCTOS -->
-        <section class="main__productos">
-            <div class="sec__title">
-                <h2>Productos</h2>
-            </div>
-
-            <div class="productos__item" data-aos="zoom-in">
-                <div class="productos__container">
-                    <img src="../assets/img/productos-image1.jpg" class="productos__img" alt="PC">
-                    <h3 class="productos__title">PC</h3>
-                </div>
-                <div class="productos__text">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis explicabo aut tenetur laboriosam.</p>
-                </div>
-            </div>
-
-            <div class="productos__item" data-aos="zoom-in">
-                <div class="productos__container">
-                    <img src="../assets/img/productos-image2.jpg" class="productos__img" alt="Consolas">
-                    <h3 class="productos__title">Consolas</h3>
-                </div>
-                <div class="productos__text">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis explicabo aut tenetur laboriosam.</p>
-                </div>
-            </div>
-
-            <div class="productos__item" data-aos="zoom-in">
-                <div class="productos__container">
-                    <img src="../assets/img/productos-image3.jpg" class="productos__img" alt="Perifericos">
-                    <h3 class="productos__title">Perifericos</h3>
-                </div>
-                <div class="productos__text">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis explicabo aut tenetur laboriosam.</p>
-                </div>
-            </div>
-
-            <div class="productos__item" data-aos="zoom-in">
-                <div class="productos__container">
-                    <img src="../assets/img/productos-image4.jpg" class="productos__img" alt="Juegos">
-                    <h3 class="productos__title">Juegos</h3>
-                </div>
-                <div class="productos__text">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis explicabo aut tenetur laboriosam.</p>
-                </div>
-            </div>
-            
-        </section>
+    <main>
+        <div class="table__container">
+            <table class="table table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Servicio</th>
+                    <th scope="col">Tiempo de Espera</th>
+                    <th scope="col">Precio</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mantenimiento de PC</td>
+                    <td>1.5 hs</td>
+                    <td>$3000</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Montaje de PC</td>
+                    <td>1 hs</td>
+                    <td>$2000</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Optimizacion</td>
+                    <td>2 hs</td>
+                    <td>$2500</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Reparacion de PC</td>
+                    <td>N/A</td>
+                    <td>$4000</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>Reparacion de Consolas</td>
+                    <td>N/A</td>
+                    <td>$5000</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+        
     </main>
-
     <!-- FOOTER -->
     <footer class="footer">
         <a href="../index.html" class="footer__logo">Gaming Store</a>
@@ -114,14 +110,7 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-    <!-- LIBRERIA DE ANIMACIONES -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
     <script src="https://kit.fontawesome.com/62645353a9.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

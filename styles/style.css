@@ -24,51 +24,28 @@
 }
 
 /* ---- NAV ---- */
-.nav{
-    height: 50vh;
+.navbar{
     background: linear-gradient(to bottom, rgb(70, 70, 80), rgb(50, 50, 60));
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
 }
-
-.nav__title{
-    display: none;
-}
-
-.nav__ul{
-    list-style-type: none;
-    height: 100%;
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.nav__li{
-    width: 100%;
-    text-align: center;
-    font-size: 7vw;
-    border-top: 3px white solid;
-    border-bottom: 3px white solid;
-    border-radius: 2vw;
-}
-
-.nav__link{
-    display: inline-block;
-    width: 100%;
-    padding: 3vw 0;
-    text-decoration: none;
-    color: white;
+.navbar-brand{
     font-weight: bold;
 }
+.navbar-nav{
+    width: 100%;
+    justify-content: end;
+    margin-right: 5vw;
+}
+.nav-item{
+    margin: 0 1vw;
+    font-weight: bold;
+}
+
 
 /* ---- MAIN ---- */
 .main{
     display: flex;
     flex-direction: column;
 }
-
 
 /* ---- MAIN (INDEX) ---- */
 .sec__title{
@@ -78,32 +55,9 @@
     font-size: 5vw;
 }
 
-/* -- SECTION ITEMS -- */
-.main__items{
+/* -- SECTION CAROUSEL -- */
+.carousel{
     background: rgb(30, 30, 40);
-}
-
-.items__container{
-    position: relative;
-    margin: 0 5vw 10vw;
-}
-
-.items__img{
-    border-radius: 10vw;
-    width: 100%;
-    height: 100%;
-}
-
-.items__subtitle{
-    width: 100%;
-    position: absolute;
-    top: calc(50% - 6vw);
-    padding: 2vw 0;
-    font-size: 6vw;
-    color: white;
-    text-align: center;
-    background-color: rgba(30, 30, 40, 0.7);
-    /*Agregar animacion*/
 }
 
 /* -- SECTION US -- */
@@ -171,6 +125,25 @@
     background-color: rgb(30, 30, 40);
 }
 
+/* ---- MAIN (SERVICIOS) ---- */
+.table__container{
+    background: rgb(70, 70, 80);
+    padding: 5vw;
+}
+
+/* ---- MAIN (SPONSOR) ---- */
+.sponsor__title{
+    background-color: rgb(70, 70, 80);
+    color: white;
+    text-align: center;
+    padding: 2vw;
+}
+
+.carousel__container{
+    background-color: rgb(70, 70, 80);
+    padding: 0 25vw 5vw;
+}
+
 /* ---- MAIN (CONTACTO) ---- */
 
 /* -- SECTION INFO -- */
@@ -228,34 +201,24 @@
     align-items: center;
 }
 
+
 .contacto__title{
     color: white;
     margin-top: 10vw;
     font-size: 5vw;
 }
 
-.contacto__form{
-    display: flex;
-    flex-direction: column;
-    margin: 10vw 5vw;
-}
-
-.contacto__input{
+/* -- SECTION FORM -- */
+.form__container{
     padding: 5vw;
-    margin-bottom: 5vw;
+}
+
+.form-label{
     color: white;
+}
+
+.form-control{
     background-color: rgb(30, 30, 40);
-    border-style: none;
-    font-size: 5vw;
-}
-
-.contacto__textarea{
-    resize: none;
-    height: 50vw;
-}
-
-.contacto__input::placeholder{
-    font-size: 5vw;
 }
 
 /* ---- FOOTER ---- */
@@ -305,74 +268,12 @@
         border-bottom: 0.5vw white solid;
     }
 
-    /* ---- NAV ---- */
-    .nav{
-        height: auto;
-        align-items: center;
-        position: sticky;
-        top: 0;
-        z-index: 999;
-    }
-
-    .nav__title{
-        display: block;
-        color: white;
-        font-size: 2vw;
-        text-decoration: none;
-        font-weight: bold;
-        transition: transform 0.2s, border-radius 0.5s;
-        padding: 1vw;
-        box-sizing: border-box;
-    }
-
-    .nav__title:hover{
-        transform: scale(1.1);
-        border-top: 2px white solid;
-        border-bottom: 2px white solid;
-        border-radius: 1vw;
-    }
-
-    .nav__ul{
-        flex-direction: row;
-        margin: 1vw 0;
-        justify-content: end;
-    }
-
-    .nav__li{
-        width: auto;
-        font-size: 1.5vw;
-        border-radius: 0.5vw;
-        margin-left: 5vw;
-        transition: all 0.2s;
-    }
-
-    .nav__li:hover{
-        transform: scale(1.1);
-        background: rgb(30, 30, 50);
-    }
-
-    .nav__link{
-        padding: 1vw;
-        width: auto;
-    }
-
-    .nav__li--active{
-        background: rgb(30, 30, 40);
-    }
-
     /* ---- MAIN (INDEX) ---- */
+    .carousel-inner{
+        padding: 3vw 17vw;
+    }
 
     /* -- SECTION ITEMS -- */
-    .main__items{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: "tit tit"
-                             "gow asc"
-                             "tlou asc"
-                             "fifa fifa";
-        padding: 0 5vw 5vw;
-    }
-
     .sec__title{
         color: white;
         text-align: center;
@@ -381,30 +282,7 @@
         grid-column-start: tit;
         grid-column-end: tit;
     }
-    
-    .items__container{
-        margin: 1vw;
-    }
-    .items__container:nth-child(4){
-        grid-column-start: asc;
-        grid-row-start: asc;
-        grid-row-end: asc;
-    }
-    .items__container:nth-child(5){
-        grid-column-start: span 2;
-        max-height: 35vw;
-    }
-    
-    .items__img{
-        border-radius: 2vw;
-        object-fit: cover;
-    }
 
-    .items__subtitle{
-        font-size: 2vw;
-        top: calc(50% - 3vw);
-    }
-    
     /* -- SECTION US -- */
     .us__container{
         background-image: url(../assets/img/us-background-desktop.jpg);
@@ -494,34 +372,6 @@
 
     .info__text{
         font-size: 2vw;
-    }
-
-    /* -- SECTION CONTACTO -- */
-    .contacto__form{
-        margin: 2vw;
-        width: 40vw;
-    }
-
-    .contacto__input{
-        padding: 0.8vw;
-        margin-bottom: 1vw;
-        font-size: 1.5vw;
-    }
-
-    .contacto__input:hover{
-        background: rgb(50, 50, 80);
-    }
-
-    .contacto__button:hover{
-        cursor: pointer;
-    }
-
-    .contacto__textarea{
-        height: 15vw;
-    }
-
-    .contacto__input::placeholder{
-        font-size: 1.5vw;
     }
     
     /* ---- FOOTER ---- */
