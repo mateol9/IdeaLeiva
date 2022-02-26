@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/62645353a9.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Desafio 4</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1 class="header__title">Gaming Store</h1>
+    </header>
+
+    <!-- NAV -->
+    <nav class="nav">
+        <a href="index.html" class="nav__title">Gaming Store</a>
+        <ul class="nav__ul">
+            <li class="nav__li nav__li--active"><a href="index.html" class="nav__link">Inicio</a></li>
+            <li class="nav__li"><a href="pages/productos.html" class="nav__link">Productos</a></li>
+            <li class="nav__li"><a href="pages/contacto.html" class="nav__link">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <!-- SECTION ITEMS -->
+        <section class="main__items">
+            <div class="sec__title" data-aos="fade-up">
+                <h2>Algunos Juegos</h2>
+            </div>
+            <div class="items__container" data-aos="zoom-in">
+                <img src="assets/img/games-image1.jpg" alt="God of War" class="items__img">
+                <h3 class="items__subtitle">God of War</h3>
+            </div>
+            <div class="items__container" data-aos="zoom-in">
+                <img src="assets/img/games-image2.jpg" alt="The Last of Us" class="items__img">
+                <h3 class="items__subtitle">The Last of Us</h3>
+            </div>
+            <div class="items__container" data-aos="zoom-in">
+                <img src="assets/img/games-image3.jpg" alt="Assasin's Creed" class="items__img">
+                <h3 class="items__subtitle">Assasin's Creed</h3>
+            </div>
+            <div class="items__container" data-aos="zoom-in">
+                <img src="assets/img/games-image4.png" alt="FIFA" class="items__img">
+                <h3 class="items__subtitle">Fifa</h3>
+            </div>
+        </section>
+
+        <!-- SECTION US -->
+        <section class="main__us">
+            <div class="sec__title" data-aos="fade-up"
+                                    data-aos-duration="1500">
+                <h2>¿Quienes Somos?</h2>
+            </div>
+            <div class="us__container" data-aos="zoom-in"
+                                       data-aos-duration="2000">
+                <p class="us__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas similique esse reprehenderit, ea totam deserunt pariatur explicabo consequatur dolor quia nulla modi omnis quos.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <a href="index.html" class="footer__logo">Gaming Store</a>
+        <div class="footer__info">
+            <p class="footer__text">gamingstore@gmail.com</p>
+            <p class="footer__text">000 - 000000</p>
+        </div>
+        <div class="footer__media">
+            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook footer__icon"></i></a></i>
+            <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram footer__icon"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter footer__icon"></i></a>
+        </div>
+    </footer>
+
+    <!-- LIBRERIA DE ANIMACIONES -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

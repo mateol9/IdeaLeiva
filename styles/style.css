@@ -1,0 +1,563 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* ---- HEADER ---- */
+.header{
+    display: flex;
+    height: 50vh;
+    background-image: url(../assets/img/header-background.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__title{
+    color: white;
+    font-size: 10vw;
+    padding: 5vw;
+    border-top: 3px white solid;
+    border-bottom: 3px white solid;
+    border-radius: 2vw;
+}
+
+/* ---- NAV ---- */
+.nav{
+    height: 50vh;
+    background: linear-gradient(to bottom, rgb(70, 70, 80), rgb(50, 50, 60));
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.nav__title{
+    display: none;
+}
+
+.nav__ul{
+    list-style-type: none;
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.nav__li{
+    width: 100%;
+    text-align: center;
+    font-size: 7vw;
+    border-top: 3px white solid;
+    border-bottom: 3px white solid;
+    border-radius: 2vw;
+}
+
+.nav__link{
+    display: inline-block;
+    width: 100%;
+    padding: 3vw 0;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* ---- MAIN ---- */
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ---- MAIN (INDEX) ---- */
+.sec__title{
+    color: white;
+    text-align: center;
+    margin: 10vw;
+    font-size: 5vw;
+}
+
+/* -- SECTION ITEMS -- */
+.main__items{
+    background: rgb(30, 30, 40);
+}
+
+.items__container{
+    position: relative;
+    margin: 0 5vw 10vw;
+}
+
+.items__img{
+    border-radius: 10vw;
+    width: 100%;
+    height: 100%;
+}
+
+.items__subtitle{
+    width: 100%;
+    position: absolute;
+    top: calc(50% - 6vw);
+    padding: 2vw 0;
+    font-size: 6vw;
+    color: white;
+    text-align: center;
+    background-color: rgba(30, 30, 40, 0.7);
+    /*Agregar animacion*/
+}
+
+/* -- SECTION US -- */
+.main__us{
+    background:rgb(70, 70, 80);
+}
+
+.us__container{
+    background-image: url(../assets/img/us-background.jpg);
+    background-size: cover;
+    margin: 5vw 5vw 10vw;
+    overflow: hidden;
+    border-radius: 10vw;
+}
+
+.us__text{
+    padding: 10vw;
+    line-height: 10vw;
+    font-size: 6vw;
+    color: white;
+    background-color: rgba(100, 100, 100, 0.7);
+    font-weight: bold;
+}
+
+/* ---- MAIN (PRODUCTOS) ---- */
+.main__productos{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, rgb(70, 70, 80), rgb(50, 50, 60));
+}
+
+.productos__item{
+    margin: 0 5vw 10vw;
+    border-radius: 10vw;
+    overflow: hidden;
+    border: white 3px solid;
+}
+
+.productos__container{
+    position: relative;
+    border-bottom: 3px white solid;
+    line-height: 0;
+}
+
+.productos__img{
+    width: 100%;
+    height: 100%;
+}
+
+.productos__title{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: calc(50% - 3vw);
+    color: white;
+    font-size: 7vw;
+    background-color: rgba(30, 30, 40, 0.7);
+    padding: 5vw 0;
+}
+
+.productos__text{
+    color: white;
+    font-size: 5vw;
+    padding: 5vw 10vw;
+    background-color: rgb(30, 30, 40);
+}
+
+/* ---- MAIN (CONTACTO) ---- */
+
+/* -- SECTION INFO -- */
+.main__info{
+    background: rgb(30, 30, 40);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info__title{
+    color: white;
+    margin-top: 10vw;
+    font-size: 5vw;
+}
+
+.info__contacto{
+    color: white;
+    font-size: 5vw;
+    margin-top: 10vw;
+    padding: 5vw;
+    line-height: 10vw;
+    border: 3px white solid;
+}
+
+.info__media{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 5vw;
+}
+
+.info__container{
+    display: flex;
+    align-items: center;
+}
+
+.info__link{
+    color: white;
+    text-decoration: none;
+    font-size: 12vw;
+    margin: 3vw 10vw;
+}
+
+.info__text{
+    font-size: 6vw;
+    color: white;
+}
+
+/* -- SECTION CONTACTO -- */
+.main__contacto{
+    background: rgb(70, 70, 80);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto__title{
+    color: white;
+    margin-top: 10vw;
+    font-size: 5vw;
+}
+
+.contacto__form{
+    display: flex;
+    flex-direction: column;
+    margin: 10vw 5vw;
+}
+
+.contacto__input{
+    padding: 5vw;
+    margin-bottom: 5vw;
+    color: white;
+    background-color: rgb(30, 30, 40);
+    border-style: none;
+    font-size: 5vw;
+}
+
+.contacto__textarea{
+    resize: none;
+    height: 50vw;
+}
+
+.contacto__input::placeholder{
+    font-size: 5vw;
+}
+
+/* ---- FOOTER ---- */
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10vw;
+    background: rgb(30, 30, 40);
+}
+
+.footer__logo{
+    font-size: 10vw;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10vw;
+    text-decoration: none;
+}
+
+.footer__info{
+    font-size: 6vw;
+    color: white;
+    margin-bottom: 10vw;
+    text-align: center;
+}
+
+.footer__text{
+    padding: 3vw;
+}
+
+.footer__icon{
+    color: white;
+    font-size: 15vw;
+    margin: 0 4vw;
+}
+
+@media only screen and ( min-width: 768px){
+    /* ---- HEADER ---- */
+    .header{
+        height: 100vh;
+    }
+
+    .header__title{
+        font-size: 6vw;
+        padding: 3vw;
+        border-top: 0.5vw white solid;
+        border-bottom: 0.5vw white solid;
+    }
+
+    /* ---- NAV ---- */
+    .nav{
+        height: auto;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+
+    .nav__title{
+        display: block;
+        color: white;
+        font-size: 2vw;
+        text-decoration: none;
+        font-weight: bold;
+        transition: transform 0.2s, border-radius 0.5s;
+        padding: 1vw;
+        box-sizing: border-box;
+    }
+
+    .nav__title:hover{
+        transform: scale(1.1);
+        border-top: 2px white solid;
+        border-bottom: 2px white solid;
+        border-radius: 1vw;
+    }
+
+    .nav__ul{
+        flex-direction: row;
+        margin: 1vw 0;
+        justify-content: end;
+    }
+
+    .nav__li{
+        width: auto;
+        font-size: 1.5vw;
+        border-radius: 0.5vw;
+        margin-left: 5vw;
+        transition: all 0.2s;
+    }
+
+    .nav__li:hover{
+        transform: scale(1.1);
+        background: rgb(30, 30, 50);
+    }
+
+    .nav__link{
+        padding: 1vw;
+        width: auto;
+    }
+
+    .nav__li--active{
+        background: rgb(30, 30, 40);
+    }
+
+    /* ---- MAIN (INDEX) ---- */
+
+    /* -- SECTION ITEMS -- */
+    .main__items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "tit tit"
+                             "gow asc"
+                             "tlou asc"
+                             "fifa fifa";
+        padding: 0 5vw 5vw;
+    }
+
+    .sec__title{
+        color: white;
+        text-align: center;
+        margin: 4vw;
+        font-size: 2vw;
+        grid-column-start: tit;
+        grid-column-end: tit;
+    }
+    
+    .items__container{
+        margin: 1vw;
+    }
+    .items__container:nth-child(4){
+        grid-column-start: asc;
+        grid-row-start: asc;
+        grid-row-end: asc;
+    }
+    .items__container:nth-child(5){
+        grid-column-start: span 2;
+        max-height: 35vw;
+    }
+    
+    .items__img{
+        border-radius: 2vw;
+        object-fit: cover;
+    }
+
+    .items__subtitle{
+        font-size: 2vw;
+        top: calc(50% - 3vw);
+    }
+    
+    /* -- SECTION US -- */
+    .us__container{
+        background-image: url(../assets/img/us-background-desktop.jpg);
+        border-radius: 2vw;
+    }
+    
+    .us__text{
+        padding: 5vw;
+        line-height: 5vw;
+        font-size: 2vw;
+    }
+
+    /* ---- MAIN (PRODUCTOS) ---- */
+    .main__productos{
+        display: grid;
+        grid-template-columns: repeat(2, 40vw);
+        grid-template-areas: "tit tit"
+                             "pc con"
+                             "per jue";
+        justify-content: center;
+    }
+
+    .productos__item{
+        display: flex;
+        flex-direction: column;
+        margin: 0 5vw 5vw;
+        border-radius: 2vw;
+    }
+
+    .productos__img{
+        object-fit: cover;
+    }
+
+    .productos__container{
+        height: 70%;
+    }
+
+    .productos__title{
+        font-size: 3vw;
+        top: calc(50% - 3vw);
+        padding: 3vw 0;
+    }
+
+    .productos__text{
+        font-size: 1.5vw;
+        padding: 2vw;
+    }
+
+    /* ---- MAIN (CONTACTO) ---- */
+    .main__contacto-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: rgb(70, 70, 80);
+    }
+
+    .contacto__title{
+        margin-top: 2vw;
+        font-size: 1.5vw;
+    }
+
+    /* -- SECTION INFO -- */
+    .main__info{
+        background: rgb(70, 70, 80)
+    }
+
+    .info__contacto{
+        margin: 2vw 0;
+        font-size: 2vw;
+        line-height: 3vw;
+        padding: 2vw 5vw;
+    }
+
+    .info__media{
+        margin: 0;
+        width: 80%;
+    }
+
+    .info__link{
+        font-size: 4vw;
+        margin: 0 3vw;
+        transition: all 0.2s;
+    }
+
+    .info__link:hover{
+        transform: scale(1.2);
+    }
+
+    .info__text{
+        font-size: 2vw;
+    }
+
+    /* -- SECTION CONTACTO -- */
+    .contacto__form{
+        margin: 2vw;
+        width: 40vw;
+    }
+
+    .contacto__input{
+        padding: 0.8vw;
+        margin-bottom: 1vw;
+        font-size: 1.5vw;
+    }
+
+    .contacto__input:hover{
+        background: rgb(50, 50, 80);
+    }
+
+    .contacto__button:hover{
+        cursor: pointer;
+    }
+
+    .contacto__textarea{
+        height: 15vw;
+    }
+
+    .contacto__input::placeholder{
+        font-size: 1.5vw;
+    }
+    
+    /* ---- FOOTER ---- */
+    .footer{
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 4vw 0;
+    }
+
+    .footer__logo{
+        font-size: 3vw;
+        margin: 1vw;
+        transition: all 0.2s;
+    }
+
+    .footer__logo:hover{
+        transform: scale(1.1);
+    }
+
+    .footer__info{
+        font-size: 1.5vw;
+        margin: 0;
+        line-height: 3vw;
+    }
+
+    .footer__text{
+        padding: 0;
+    }
+
+    .footer__icon{
+        font-size: 5vw;
+        margin: 0 1vw;
+        transition: all 0.2s;
+    }
+
+    .footer__icon:hover{
+        transform: scale(1.2);
+    }
+}
