@@ -1,0 +1,33 @@
+
+    /* ---- HEADER ---- */
+
+.header{
+    display: flex;
+    height: 50vh;
+    background-image: url(../assets/img/header-background.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+
+    .header__title{
+        color: $title-color;
+        font-size: 10vw;
+        padding: 5vw;
+        border-top: 3px white solid;
+        border-bottom: 3px white solid;
+        border-radius: 2vw;
+    }
+}
+
+@media only screen and ( min-width: 768px){
+    .header{
+        height: 100vh;
+
+        .header__title{
+            font-size: 6vw;
+            padding: 3vw;
+            border-top: 0.5vw white solid;
+            border-bottom: 0.5vw white solid;
+        }
+    }
+}   

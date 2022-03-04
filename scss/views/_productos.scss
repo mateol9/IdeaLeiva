@@ -1,0 +1,95 @@
+
+    /* ---- MAIN (PRODUCTOS) ---- */
+
+.main__productos{
+    display: flex;
+    flex-direction: column;
+    background: $gradient-background;
+
+    .sec__title{
+        color: $subtitle-color;
+        text-align: center;
+        margin: 10vw;
+        font-size: 5vw;
+    }
+
+    .productos__item{
+        margin: 0 5vw 10vw;
+        border-radius: 10vw;
+        overflow: hidden;
+        border: white 3px solid;
+
+        .productos__container{
+            position: relative;
+            border-bottom: 3px white solid;
+            line-height: 0;
+
+            .productos__img{
+                width: 100%;
+                height: 100%;
+            }
+
+            .productos__title{
+                width: 100%;
+                text-align: center;
+                position: absolute;
+                top: calc(50% - 3vw);
+                color: $text-color;
+                font-size: 7vw;
+                background-color: rgba(30, 30, 40, 0.7);
+                padding: 5vw 0;
+            }
+        }
+
+        .productos__text{
+            color: $text-color;
+            font-size: 5vw;
+            padding: 5vw 10vw;
+            background-color: $background-color1;
+        }
+    }
+}
+
+@media only screen and ( min-width: 768px){
+    .main__productos{
+        display: grid;
+        grid-template-columns: repeat(2, 40vw);
+        grid-template-areas: "tit tit"
+                            "pc con"
+                            "per jue";
+        justify-content: center;
+
+        .sec__title{
+            margin: 4vw;
+            font-size: 2vw;
+            grid-column-start: tit;
+            grid-column-end: tit;
+        }
+
+        .productos__item{
+            display: flex;
+            flex-direction: column;
+            margin: 0 5vw 5vw;
+            border-radius: 2vw;
+
+            .productos__container{
+                height: 70%;
+
+                .productos__img{
+                    object-fit: cover;
+                }
+
+                .productos__title{
+                    font-size: 3vw;
+                    top: calc(50% - 3vw);
+                    padding: 3vw 0;
+                }
+            }
+
+            .productos__text{
+                font-size: 1.5vw;
+                padding: 2vw;
+            }
+        }
+    }
+}
