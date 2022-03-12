@@ -1,13 +1,26 @@
 
 /* ---- MAIN (SPONSOR) ---- */
-.sponsor__title{
-    background-color: $background-color2;
-    color: $subtitle-color;
-    text-align: center;
-    padding: 2vw;
+
+.main__sponsor{
+    @include mm($background-color2, flex, column, left);        /* -- MIXIN -- */
+
+    .sponsor__title{        /* -- EXTEND -- */
+        @extend .title;
+        background-color: $background-color1;
+        padding: 1vw;
+    }
+    
+    .carousel__container{
+        padding: 0 25vw 5vw;
+    }
 }
 
-.carousel__container{
-    background-color: $background-color2;
-    padding: 0 25vw 5vw;
+@media only screen and (min-width:768px){
+    .main__sponsor{
+
+        .sponsor__title{
+            margin: 4vw;
+            font-size: 2vw;
+        }
+    }
 }

@@ -8,3 +8,12 @@
     $gradient-background: linear-gradient(to bottom, rgb(70, 70, 80), rgb(50, 50, 60));
     $background-color1: rgb(30, 30, 40);
     $background-color2: rgb(70, 70, 80);
+
+    /* ---- MIXINS ---- */
+
+    @mixin mm($background, $display, $flex, $align){
+        background: $background;
+        display: $display;
+        flex-direction: $flex;
+        align-items: $align;
+    }

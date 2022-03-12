@@ -2,15 +2,10 @@
     /* ---- MAIN (PRODUCTOS) ---- */
 
 .main__productos{
-    display: flex;
-    flex-direction: column;
-    background: $gradient-background;
+    @include mm($gradient-background, flex, column, left);        /* -- MIXIN -- */
 
-    .sec__title{
-        color: $subtitle-color;
-        text-align: center;
-        margin: 10vw;
-        font-size: 5vw;
+    .productos__title{          /* -- EXTEND -- */
+        @extend .title;
     }
 
     .productos__item{
@@ -29,7 +24,7 @@
                 height: 100%;
             }
 
-            .productos__title{
+            .productos__subtitle{
                 width: 100%;
                 text-align: center;
                 position: absolute;
@@ -59,7 +54,7 @@
                             "per jue";
         justify-content: center;
 
-        .sec__title{
+        .productos__title{
             margin: 4vw;
             font-size: 2vw;
             grid-column-start: tit;
@@ -79,7 +74,7 @@
                     object-fit: cover;
                 }
 
-                .productos__title{
+                .productos__subtitle{
                     font-size: 3vw;
                     top: calc(50% - 3vw);
                     padding: 3vw 0;

@@ -3,3 +3,10 @@
     padding: 0;
     font-family: 'Roboto Mono', monospace;
 }
+
+.title{         /* -- EXTEND -- */
+    color: $subtitle-color;
+    text-align: center;
+    margin: 10vw;
+    font-size: 5vw;
+}

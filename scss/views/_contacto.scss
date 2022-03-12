@@ -1,23 +1,18 @@
 
     /* ---- MAIN (CONTACTO) ---- */
 
-.contacto__title{
-    color: $subtitle-color;
-    margin-top: 10vw;
-    font-size: 5vw;
+.contacto__title{           /* -- EXTEND -- */
+    @extend .title;
+    border-bottom: 2px white solid;
 }
 
 /* -- SECTION INFO -- */
 .main__info{
-    background: $background-color1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include mm($background-color1, flex, column, center);        /* -- MIXIN -- */
 
     .info__contacto{
         color: $text-color;
         font-size: 5vw;
-        margin-top: 10vw;
         padding: 5vw;
         line-height: 10vw;
         border: 3px white solid;
@@ -50,10 +45,7 @@
 
 /* -- SECTION CONTACTO -- */
 .main__contacto{
-    background: $background-color2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include mm($background-color2, flex, column, center);        /* -- MIXIN -- */
 
     .form__container{
         padding: 5vw;
@@ -74,7 +66,7 @@
         grid-template-columns: repeat(2, 1fr);
 
         .contacto__title{
-            margin-top: 2vw;
+            margin: 2vw;
             font-size: 1.5vw;
         }
     

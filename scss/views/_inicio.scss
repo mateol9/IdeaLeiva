@@ -8,23 +8,24 @@
 
 /* -- SECTION US -- */
 .main__us{
-    background: $background-color2;
+    @include mm($background-color2, flex, column, left);        /* -- MIXIN -- */
 
-    .sec__title{
-        color: $subtitle-color;
-        text-align: center;
-        margin: 10vw;
-        font-size: 5vw;
+    .inicio__title{             /* -- EXTEND -- */
+        @extend .title;
+        background-color: $background-color1;
+        padding: 1vw;
+        border-radius: 10vw;
     }
 
     .us__container{
         background-image: url(../assets/img/us-background.jpg);
         background-size: cover;
-        margin: 5vw 5vw 10vw;
+        margin: 0vw 5vw 10vw;
         overflow: hidden;
         border-radius: 10vw;
 
         .us__text{
+            margin: 0;
             padding: 10vw;
             line-height: 10vw;
             font-size: 6vw;
@@ -41,7 +42,8 @@
     }
 
     .main__us{
-        .sec__title{
+        
+        .inicio__title{
             margin: 4vw;
             font-size: 2vw;
             grid-column-start: tit;

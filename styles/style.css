@@ -1,8 +1,16 @@
 /* ---- VARIABLES ---- */
+/* ---- MIXINS ---- */
 * {
   margin: 0;
   padding: 0;
   font-family: 'Roboto Mono', monospace; }
+
+.title, .main__us .inicio__title, .main__productos .productos__title, .main__servicios .servicios__title, .main__sponsor .sponsor__title, .contacto__title {
+  /* -- EXTEND -- */
+  color: white;
+  text-align: center;
+  margin: 10vw;
+  font-size: 5vw; }
 
 /* ---- HEADER ---- */
 .header {
@@ -103,19 +111,24 @@
 
 /* -- SECTION US -- */
 .main__us {
-  background: #464650; }
-  .main__us .sec__title {
-    color: white;
-    text-align: center;
-    margin: 10vw;
-    font-size: 5vw; }
+  background: #464650;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  /* -- MIXIN -- */ }
+  .main__us .inicio__title {
+    /* -- EXTEND -- */
+    background-color: #1e1e28;
+    padding: 1vw;
+    border-radius: 10vw; }
   .main__us .us__container {
     background-image: url(../assets/img/us-background.jpg);
     background-size: cover;
-    margin: 5vw 5vw 10vw;
+    margin: 0vw 5vw 10vw;
     overflow: hidden;
     border-radius: 10vw; }
     .main__us .us__container .us__text {
+      margin: 0;
       padding: 10vw;
       line-height: 10vw;
       font-size: 6vw;
@@ -126,7 +139,7 @@
 @media only screen and (min-width: 768px) {
   .carousel-inner {
     padding: 3vw 17vw; }
-  .main__us .sec__title {
+  .main__us .inicio__title {
     margin: 4vw;
     font-size: 2vw;
     grid-column-start: tit;
@@ -141,14 +154,13 @@
 
 /* ---- MAIN (PRODUCTOS) ---- */
 .main__productos {
+  background: linear-gradient(to bottom, #464650, #32323c);
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to bottom, #464650, #32323c); }
-  .main__productos .sec__title {
-    color: white;
-    text-align: center;
-    margin: 10vw;
-    font-size: 5vw; }
+  align-items: left;
+  /* -- MIXIN -- */ }
+  .main__productos .productos__title {
+    /* -- EXTEND -- */ }
   .main__productos .productos__item {
     margin: 0 5vw 10vw;
     border-radius: 10vw;
@@ -161,7 +173,7 @@
       .main__productos .productos__item .productos__container .productos__img {
         width: 100%;
         height: 100%; }
-      .main__productos .productos__item .productos__container .productos__title {
+      .main__productos .productos__item .productos__container .productos__subtitle {
         width: 100%;
         text-align: center;
         position: absolute;
@@ -182,7 +194,7 @@
     grid-template-columns: repeat(2, 40vw);
     grid-template-areas: "tit tit" "pc con" "per jue";
     justify-content: center; }
-    .main__productos .sec__title {
+    .main__productos .productos__title {
       margin: 4vw;
       font-size: 2vw;
       grid-column-start: tit;
@@ -196,7 +208,7 @@
         height: 70%; }
         .main__productos .productos__item .productos__container .productos__img {
           object-fit: cover; }
-        .main__productos .productos__item .productos__container .productos__title {
+        .main__productos .productos__item .productos__container .productos__subtitle {
           font-size: 3vw;
           top: calc(50% - 3vw);
           padding: 3vw 0; }
@@ -205,37 +217,57 @@
         padding: 2vw; } }
 
 /* ---- MAIN (SERVICIOS) ---- */
-.table__container {
-  background: #464650;
-  padding: 5vw; }
+.main__servicios {
+  background: linear-gradient(to bottom, #464650, #32323c);
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  /* -- MIXIN -- */ }
+  .main__servicios .servicios__title {
+    /* -- EXTEND -- */
+    border-bottom: 2px white solid; }
+  .main__servicios .table__container {
+    padding: 0 5vw 5vw; }
+
+@media only screen and (min-width: 768px) {
+  .main__servicios .servicios__title {
+    margin: 4vw;
+    font-size: 2vw; } }
 
 /* ---- MAIN (SPONSOR) ---- */
-.sponsor__title {
-  background-color: #464650;
-  color: white;
-  text-align: center;
-  padding: 2vw; }
+.main__sponsor {
+  background: #464650;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  /* -- MIXIN -- */ }
+  .main__sponsor .sponsor__title {
+    /* -- EXTEND -- */
+    background-color: #1e1e28;
+    padding: 1vw; }
+  .main__sponsor .carousel__container {
+    padding: 0 25vw 5vw; }
 
-.carousel__container {
-  background-color: #464650;
-  padding: 0 25vw 5vw; }
+@media only screen and (min-width: 768px) {
+  .main__sponsor .sponsor__title {
+    margin: 4vw;
+    font-size: 2vw; } }
 
 /* ---- MAIN (CONTACTO) ---- */
 .contacto__title {
-  color: white;
-  margin-top: 10vw;
-  font-size: 5vw; }
+  /* -- EXTEND -- */
+  border-bottom: 2px white solid; }
 
 /* -- SECTION INFO -- */
 .main__info {
   background: #1e1e28;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  /* -- MIXIN -- */ }
   .main__info .info__contacto {
     color: white;
     font-size: 5vw;
-    margin-top: 10vw;
     padding: 5vw;
     line-height: 10vw;
     border: 3px white solid; }
@@ -261,7 +293,8 @@
   background: #464650;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  /* -- MIXIN -- */ }
   .main__contacto .form__container {
     padding: 5vw; }
     .main__contacto .form__container .form-label {
@@ -275,7 +308,7 @@
     grid-template-columns: repeat(2, 1fr);
     /* -- SECTION INFO -- */ }
     .main__contacto-grid .contacto__title {
-      margin-top: 2vw;
+      margin: 2vw;
       font-size: 1.5vw; }
     .main__contacto-grid .main__info {
       background: #464650; }
